@@ -1,0 +1,45 @@
+<view class="flex-col page" style="height: 1242rpx; display: flex; box-sizing: border-box">
+  <view class="flex-col group">
+    <text class="self-center text">星月夜</text>
+    <view class="self-stretch section mt-15"></view>
+  </view>
+  <view class="flex-col section_2">
+    <view class="flex-col justify-start items-start text-wrapper"><text class="font text_2">艺术家:</text>
+    <text class="text_7">文森特·梵高</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_2 mt-11">
+      <text class="font text_3">创作时间:</text>
+      <text class="text_7">1889 年 6 月</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_3 mt-11">
+      <text class="font text_4">艺术流派:</text>
+      <text class="text_7">后印象派</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_2 mt-11">
+      <text class="font text_5">收藏地点:</text>
+      <text class="text_7">纽约现代艺术博物馆</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_4 mt-11">
+      <text class="font text_6">作品描述:</text>
+      <text class="text_7">《星月夜》是后印象派画家梵·高的代表作之一。在这幅画中，梵·高用夸张的手法，生动地描绘了充满运动和变化的星空。夜晚的天空高又远，大星、小星回旋于夜空，金黄的月亮形成巨大的漩涡，星云的短线条纠结、盘旋，仿佛让人们看见时光的流逝。暗绿褐色的柏树像巨大的火焰，是星夜狂欢的响应者。天空下，安睡的村庄那么宁静、安详。淡蓝的色调，动感的线条，给人自由的时空感。</text>
+    </view>
+  </view>
+</view>
+  <view class="mt-20 flex-row equal-division">
+    <view class="flex-row items-center equal-division-item" style="position: relative; left: 44rpx; top: 0rpx">
+      <image
+        class="image"
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/10.png?sign=e8e6654c3805c163a7b686235a07c7bb&t=1756990569"
+      />
+      <text class="font_3 ml-3">收藏作品</text>
+    </view>
+    <navigator url="/pages/style_migration/style_migration" hover-class="navigator-hover">
+      <view class="ml-48 flex-row items-center  equal-division-item" style="width: 248rpx; display: flex; box-sizing: border-box; position: relative; left: 82rpx; top: 0rpx; height: 62rpx">
+        <image style="width: 63rpx; height: 62rpx; display: block; box-sizing: border-box"
+          class="shrink-0 image_2"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/18.png?sign=363ca0e23576fa688817eb68f51a4178&t=1756990590"
+        />
+        <text class="font_3 text_10 ml-11" style="position: relative; left: -20rpx; top: 0rpx">换个风格</text>
+      </view>
+    </navigator>
+  </view>

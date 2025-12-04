@@ -1,0 +1,154 @@
+.mt-11 {
+  margin-top: 19.19rpx;
+}
+.page {
+  padding: 50rpx 29.65rpx 20rpx;
+  background-color: #fff1cc;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100%;
+}
+.image-wrapper {
+  padding: 100rpx 0 100rpx;
+  background-color: #cccccc;
+  border-radius: 47.09rpx;
+}
+.image {
+  width: 245.93rpx;
+  height: 202.33rpx;
+}
+.group {
+  margin-top: 111.63rpx;
+  padding-left: 10.47rpx;
+  padding-right: 3.49rpx;
+}
+.font {
+  font-size: 41.86rpx;
+  font-family: SourceHanSansCN;
+  line-height: 38.69rpx;
+}
+.text {
+  color: #000000;
+}
+.text_2 {
+  color: #bf6a4b;
+  line-height: 39.05rpx;
+}
+.group_2 {
+  padding: 0 6.98rpx;
+}
+.view {
+  margin-top: 45.35rpx;
+}
+.section {
+  background-color: #ffffff;
+  border-radius: 8.72rpx;
+  width: 177.91rpx;
+  height: 177.91rpx;
+}
+.divider {
+  margin-right: 13.95rpx;
+  background-color: #00000033;
+  height: 1.74rpx;
+}
+.view_2 {
+  margin-top: 48.84rpx;
+}
+
+.section {
+  background-color: var(--white);
+  border-radius: 34.88rpx;
+  height: 211.05rpx;
+  border-left: solid 1.74rpx var(--black);
+  border-right: solid 1.74rpx var(--black);
+  border-top: solid 1.74rpx var(--black);
+  border-bottom: solid 1.74rpx var(--black);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.view {
+  margin-top: 40rpx;
+}
+
+.group {
+  margin-top: 30rpx;
+}
+
+.section_2 {
+  flex: 1; /* 让两个图片容器平分父容器宽度 */
+  max-width: 317.51rpx; /* 限制最大宽度，避免过宽 */
+  margin: 0 12.5rpx;
+  position: relative; /* 为图片比例缩放提供定位基准 */
+  padding-top: 75%; /* 4:3 比例（高度=宽度*0.75），可根据需要调整 */
+}
+
+/* 修改图片样式，使其填充容器并保持比例 */
+.section_2_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持图片比例并裁剪多余部分 */
+  background-color: #ffffff;
+  border-radius: 37.76rpx;
+}
+
+/* 调整行容器样式，确保图片排列正确 */
+.flex-row.justify-center {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12.5rpx; /* 抵消图片容器的margin，避免溢出 */
+}
+/* 调整图片容器样式 - 去除底部margin减少上下空白 */
+.image-container {
+  width: 45%;
+  margin: 0 10rpx 10rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.art-image {
+  width: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #f5f5f5;
+  display: block;
+}
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.image-info {
+  height: 100rpx;
+  padding: 20rpx;
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  margin-top: -2rpx; 
+  box-sizing: border-box;
+}
+
+.image-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-author {
+  font-size: 22rpx;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5rpx;
+}

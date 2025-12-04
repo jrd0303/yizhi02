@@ -1,0 +1,30 @@
+<view class="flex-col page">
+  <view class="flex-col group">
+    <text class="self-center text">创作亚当</text>
+    <view class="self-stretch section mt-15"></view>
+  </view>
+  <view class="flex-col section_2">
+    <view class="flex-col justify-start items-start text-wrapper"><text class="font text_2">艺术家:</text>
+    <text class="text_7">	米开朗基罗</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_2 mt-11">
+      <text class="font text_3">创作时间:</text>
+      <text class="text_7">1511</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_3 mt-11">
+      <text class="font text_4">艺术流派:</text>
+      <text class="text_7">浪漫主义与现实主义相融合</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_2 mt-11">
+      <text class="font text_5">收藏地点:</text>
+      <text class="text_7">	梵蒂冈西斯廷教堂</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_4 mt-11">
+      <text class="font text_6">作品描述:</text>
+      <view class="description-container">
+          <text class="text_7">{{showFullDescription ? description : description.substring(0, 50) + '...'}}</text>
+          <text class="show-more" bindtap="toggleDescription">{{showFullDescription ? '收起' : '展开全文'}}</text>
+        </view>
+    </view>
+  </view>
+</view>

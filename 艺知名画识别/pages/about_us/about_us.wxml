@@ -1,0 +1,67 @@
+<view class="page">
+  <!-- 返回按钮 -->
+  
+  
+  <!-- 顶部标题 -->
+  <text class="self-center text" style="position: relative; left: 42rpx; top: 2rpx">关于我们</text>
+  
+  <!-- 版本信息 -->
+  <view class="flex-col self-stretch mt-21">
+    <view class="flex-col justify-start items-start text-wrapper">
+      <text class="text_2">版本号 1.0.0</text>
+    </view>
+    
+    <!-- 小程序介绍 -->
+    <view class="flex-col section mt-29">
+      <!-- 介绍内容 -->
+      <text class="self-start font text_3 mb-15">名画识别小程序是一款集艺术欣赏、创作与学习于一体的智能工具，致力于让艺术走进生活，让每个人都能轻松探索艺术世界的魅力。</text>
+      
+      <!-- 主要功能 -->
+      <view class="feature-section">
+        <text class="feature-title">核心功能</text>
+        
+        <!-- 名画识别 -->
+        <view class="feature-item">
+          <text class="feature-name">🖼️ 名画识别</text>
+          <text class="feature-desc">上传任意画作照片，AI智能识别画作名称、作者、创作年代、艺术流派等信息，帮助您快速了解艺术品背景知识。</text>
+        </view>
+        
+        <!-- 风格迁移 -->
+        <view class="feature-item">
+          <text class="feature-name">🎨 风格迁移</text>
+          <text class="feature-desc">将您的照片或创作作品转换为世界名画风格，体验艺术创作的乐趣，生成专属艺术作品。</text>
+        </view>
+        
+        <!-- AI助手 -->
+        <view class="feature-item">
+          <text class="feature-name">🤖 AI艺术助手</text>
+          <text class="feature-desc">遇到艺术问题？AI助手随时为您解答，提供画作背景、艺术流派、鉴赏知识等专业解析。</text>
+        </view>
+        
+        <!-- 收藏功能 -->
+        <view class="feature-item">
+          <text class="feature-name">⭐ 收藏管理</text>
+          <text class="feature-desc">收藏喜爱的名画信息和风格迁移作品，方便随时回顾和分享您的艺术发现。</text>
+        </view>
+        
+        <!-- 历史记录 -->
+        <view class="feature-item">
+          <text class="feature-name">📝 识别记录</text>
+          <text class="feature-desc">自动保存您的识别历史，让您可以随时查看过去识别过的画作和相关信息。</text>
+        </view>
+        
+        <!-- 热门推荐 -->
+        <view class="feature-item">
+          <text class="feature-name">🔥 热门推荐</text>
+          <text class="feature-desc">推荐热门画作和艺术内容，丰富您的艺术视野。</text>
+        </view>
+      </view>
+      
+      <!-- 设计理念 -->
+      <view class="concept-section mt-30">
+        <text class="concept-title">设计理念</text>
+        <text class="concept-desc">我们相信艺术不应受限于专业知识，每个人都应有机会欣赏和创造艺术。名画识别小程序通过人工智能技术，降低了艺术欣赏的门槛，让艺术成为日常生活的一部分。</text>
+      </view>
+    </view>
+  </view>
+</view>

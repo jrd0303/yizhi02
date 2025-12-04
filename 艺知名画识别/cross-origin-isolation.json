@@ -1,0 +1,12 @@
+{
+  "csp": {
+    "directives": {
+      "script-src": "'self'",
+      "worker-src": "'self'",
+      "style-src": "'self' 'unsafe-inline'",
+      "connect-src": "*",
+      "img-src": "*",
+      "font-src": "'self'"
+    }
+  }
+}

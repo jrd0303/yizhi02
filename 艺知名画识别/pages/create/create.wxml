@@ -1,0 +1,86 @@
+<view class="flex-col page">
+  <view class="flex-col" style="height: 95rpx; display: flex; box-sizing: border-box">
+    <view class="flex-row justify-between items-center group" style="position: relative; left: 0rpx; top: -46rpx">
+      <view bindtap="navigateToCollection" class="nav-item">
+        <text class="font text">我的收藏</text>
+      </view>
+      <view class="flex-col justify-start items-center text-wrapper"><text class="font text_2">创作记录</text></view>
+      <view bindtap="navigateToRecognitionRecord" class="nav-item">
+        <text class="font text_3">识别记录</text>
+      </view>
+    </view>
+  </view>
+  <view class="image-row">
+    <view class="image-container">
+      <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/zuihdwancan.jpg?sign=e2256aea51fcc57b94a25ad2676d7233&t=1763471866" 
+        mode="widthFix"
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">最后的晚餐</text>
+        <text class="image-author">达·芬奇</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+
+    <view class="image-container">
+      <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/1652406111312728.png?sign=dfc116a64754907a32f7730bb77ca328&t=1763471841" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">夏洛特小姐</text>
+        <text class="image-author">约翰·威廉·沃特豪斯</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+    <view class="image-container">
+      <navigator url="/pages/detail/detail" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/xingkong.jpg?sign=66fa7ae81d654fe968769a152fb5c2a3&t=1763471854" 
+        mode="widthFix" 
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">星月夜</text>
+        <text class="image-author">文森特·梵高</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+    <view class="image-container">
+      <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/czyadang.jpg?sign=5a7ac6dfa3732ee99f1d254771e89ae0&t=1763471774" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+      <view style="display: flex;flex-direction: column;">
+        <text class="image-title">创作亚当</text>
+        <text class="image-author">米开朗基罗</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+  </view>
+</view>

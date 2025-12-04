@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/recognition/recognition",
+    "pages/style_migration/style_migration",
+    "pages/recommend/recommend",
+    "pages/result/result",
+    "pages/my/my",
+    "pages/chat/chat",
+    "pages/collection/collection",
+    "pages/create/create",
+    "pages/recognition_record/recognition_record",
+    "pages/about_us/about_us",
+    "pages/privacy_policy/privacy_policy",
+    "pages/feedback/feedback",
+    "pages/detail/detail",
+    "pages/detail2/detail2",
+    "pages/detail3/detail3",
+    "pages/detail4/detail4",
+    "pages/test/test",
+    "pages/12"
+  ],
+  "cloud": true,
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#bf6a4b",
+    "backgroundColor": "#FFF1CC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/3.png",
+        "selectedIconPath": "images/3.png"
+      },
+      {
+        "pagePath": "pages/recognition/recognition",
+        "text": "识别",
+        "iconPath": "images/4.png",
+        "selectedIconPath": "images/4.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "聊天",
+        "iconPath": "images/5.png",
+        "selectedIconPath": "images/5.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/6.png",
+        "selectedIconPath": "images/6.png"
+      }
+    ]
+  }
+}

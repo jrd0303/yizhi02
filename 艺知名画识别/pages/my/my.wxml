@@ -1,0 +1,85 @@
+<view class="flex-col page">
+  <view class="flex-col items-center" style="position: relative; left: 0rpx; top: -44rpx">
+    <!-- 已登录状态显示用户信息 -->
+    <block wx:if="{{isLoggedIn}}">
+      <image style="width: 219rpx; height: 219rpx; display: block; box-sizing: border-box"
+        class="self-center image avatar"
+        src="{{userInfo.avatarUrl}}"
+        mode="aspectFill"
+      />
+      <text class="user-name mt-15">{{userInfo.nickName}}</text>
+    </block>
+    <!-- 未登录状态使用最新的头像昵称填写组件 -->
+    <block wx:else>
+      <!-- 头像选择 -->
+      <button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar" class="avatar-button" type="default">
+        <image src="{{userInfo.avatarUrl}}" class="open-avatar"></image>
+      </button>
+      <!-- 昵称输入 -->
+      <view class="nickname-input-container">
+        <input type="nickname" placeholder="你好，游客" bind:blur="onInputNickname" class="nickname-input"/>
+      </view>
+      <!-- 登录按钮 -->
+      <button class="login-button mt-10" bindtap="handleUserLogin" type="primary" disabled="{{!userInfo.avatarUrl || !userInfo.nickName}}">完成登录</button>
+    </block>
+
+  </view>
+  <view class="flex-col self-stretch list">
+    <navigator url="/pages/collection/collection" hover-class="navigator-hover">
+      <view class="flex-row items-center section" style="position: relative; left: 0rpx; top: -63rpx">
+        <image
+          class="image_2"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/10.png?sign=0ea600e7cf3641e03061c2738107b39d&t=1757594716"
+        />
+        <text class="font text ml-28">我的收藏</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/recognition_record/recognition_record" hover-class="navigator-hover">
+      <view class="flex-row items-center section_2 mt-31" style="position: relative; left: 0rpx; top: -89rpx">
+        <image
+          class="image_3"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/11.png?sign=e71a5df844752dc9f632e9fa69c2678a&t=1757594729"
+        />
+        <text class="font text_2 ml-28">识别记录</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/create/create" hover-class="navigator-hover">
+      <view class="flex-row items-center section_3 mt-31" style="position: relative; left: 0rpx; top: -114rpx">
+        <image
+          class="image_4"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/12.png?sign=626ad68b1ac9b520416d36042dcba2c3&t=1757594795"
+        />
+        <text class="font ml-33">创作记录</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/feedback/feedback" hover-class="navigator-hover">
+      <view class="flex-row items-center section_4 mt-31" style="position: relative; left: 0rpx; top: -140rpx">
+        <image
+          class="image_3"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/13.png?sign=7ea3221fb6aa40e9dce96bec78fc69b8&t=1757594808"
+        />
+        <text class="font text_3 ml-33">意见反馈</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="flex-col self-stretch group">
+    <navigator url="/pages/about_us/about_us" hover-class="navigator-hover">
+      <view class="flex-row justify-center items-center relative section_5" style="position: relative; left: 0rpx; top: -157rpx">
+        <image
+          class="image_5 pos"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/14.png?sign=00f1b007dd030337058b9a5769d74d0d&t=1757594822"
+        />
+        <text class="font_2">关于我们</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/privacy_policy/privacy_policy" hover-class="navigator-hover">
+      <view class="flex-row justify-center relative section_6 mt-17" style="position: relative; left: 0rpx; top: -154rpx">
+        <image
+          class="self-center image_5 pos_2"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/15.png?sign=7603bec804d02abf902c68ec39f48205&t=1757594833"
+        />
+        <text class="self-start font_2 text_4">隐私政策</text>
+      </view>
+    </navigator>
+  </view>
+</view>

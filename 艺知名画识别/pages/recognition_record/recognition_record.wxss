@@ -1,0 +1,172 @@
+.ml-15 {
+  margin-left: 26.16rpx;
+}
+.page {
+  padding-left: 24.42rpx;
+  padding-bottom: 10.47rpx;
+  background-color: #fff1cc;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.group {
+  padding-left: 20.93rpx;
+  padding-bottom: 20.93rpx;
+}
+.font {
+  font-size: 41.86rpx;
+  font-family: SourceHanSansCN;
+  line-height: 38.51rpx;
+  color: #333333;
+}
+.text {
+  line-height: 38.81rpx;
+}
+.text-wrapper {
+  padding: 27.91rpx 0;
+  background: linear-gradient(135deg, #f4e668 0%, #fff9c4 33%, #ffebee 33%, #ffebee 66%, #e0f7fa 66%, #b3e8ef 100%);
+  border-radius: 0rpx 0rpx 55.81rpx 55.81rpx;
+  height: 90.7rpx;
+  position: relative;
+  overflow: hidden;
+  /* 堆叠效果 */
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.05),
+              0 4rpx 12rpx rgba(0, 0, 0, 0.08),
+              inset 0 1rpx 3rpx rgba(255, 255, 255, 0.8),
+              inset 0 -1rpx 3rpx rgba(0, 0, 0, 0.05);
+  transform: translateY(-1rpx);
+}
+
+/* 导航项样式 */
+.nav-item {
+  padding: 10rpx 15rpx;
+  border-radius: 20rpx;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.text-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.3) 100%);
+  z-index: 1;
+}
+.text_2 {
+  line-height: 37.88rpx;
+  text-shadow: 0rpx 3.49rpx 6.98rpx #00000040;
+}
+.section {
+  margin-right: 24.42rpx;
+  background-color: #ffffff;
+  border-radius: 34.88rpx;
+  height: 211.05rpx;
+  border-left: solid 1.74rpx #000000;
+  border-right: solid 1.74rpx #000000;
+  border-top: solid 1.74rpx #000000;
+  border-bottom: solid 1.74rpx #000000;
+}
+.section {
+  background-color: var(--white);
+  border-radius: 34.88rpx;
+  height: 211.05rpx;
+  border-left: solid 1.74rpx var(--black);
+  border-right: solid 1.74rpx var(--black);
+  border-top: solid 1.74rpx var(--black);
+  border-bottom: solid 1.74rpx var(--black);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.view {
+  margin-top: 62.79rpx;
+}
+
+.group {
+  margin-top: 47.09rpx;
+}
+
+.section_2 {
+  flex: 1; /* 让两个图片容器平分父容器宽度 */
+  max-width: 317.51rpx; /* 限制最大宽度，避免过宽 */
+  margin: 0 12.5rpx;
+  position: relative; /* 为图片比例缩放提供定位基准 */
+  padding-top: 75%; /* 4:3 比例（高度=宽度*0.75），可根据需要调整 */
+}
+
+/* 修改图片样式，使其填充容器并保持比例 */
+.section_2_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持图片比例并裁剪多余部分 */
+  background-color: #ffffff;
+  border-radius: 37.76rpx;
+}
+
+/* 调整行容器样式，确保图片排列正确 */
+.flex-row.justify-center {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12.5rpx; /* 抵消图片容器的margin，避免溢出 */
+}
+/* 调整图片容器样式 - 去除底部margin减少上下空白 */
+.image-container {
+  width: 45%;
+  margin: 0 10rpx 10rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.art-image {
+  width: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #f5f5f5;
+  display: block;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.image-info {
+  height: 100rpx;
+  padding: 15rpx;
+  background-color: #ffffff;
+  border-radius: 0 0 20rpx 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  margin-top: -2rpx; 
+  box-sizing: border-box;
+}
+
+.image-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-author {
+  font-size: 22rpx;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5rpx;
+}

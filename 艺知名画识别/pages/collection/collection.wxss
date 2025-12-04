@@ -1,0 +1,116 @@
+.ml-23 {
+  margin-left: 40.12rpx;
+}
+.page {
+  padding-bottom: 10.47rpx;
+  background-color: #fff1cc;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* 导航项样式 */
+.nav-item {
+  padding: 10rpx 15rpx;
+  border-radius: 20rpx;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.text-wrapper {
+  padding: 20.93rpx 0 31.4rpx;
+  background: linear-gradient(135deg, #f4e668 0%, #fff9c4 33%, #ffebee 33%, #ffebee 66%, #e0f7fa 66%, #b3e8ef 100%);
+  border-radius: 0rpx 0rpx 55.81rpx 55.81rpx;
+  height: 90.7rpx;
+  position: relative;
+  overflow: hidden;
+  /* 堆叠效果 */
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.05),
+              0 4rpx 12rpx rgba(0, 0, 0, 0.08),
+              inset 0 1rpx 3rpx rgba(255, 255, 255, 0.8),
+              inset 0 -1rpx 3rpx rgba(0, 0, 0, 0.05);
+  transform: translateY(-1rpx);
+}
+
+.text-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.3) 100%);
+  z-index: 1;
+}
+.font {
+  font-size: 41.86rpx;
+  font-family: SourceHanSansCN;
+  line-height: 38.51rpx;
+  color: #333333;
+}
+.text {
+  line-height: 38.81rpx;
+  text-shadow: 0rpx 3.49rpx 6.98rpx #00000040;
+}
+.text_2 {
+  margin-right: 31.4rpx;
+  line-height: 37.88rpx;
+}
+
+/* 修改图片样式，使其填充容器并保持比例 */
+
+/* 调整行容器样式，确保图片排列正确 */
+/* 调整图片容器样式 - 去除底部margin减少上下空白 */
+.image-container {
+  width: 45%;
+  margin: 0 10rpx 10rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.art-image {
+  width: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #f5f5f5;
+  display: block;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.image-info {
+  height: 100rpx;
+  padding: 15rpx;
+  background-color: #ffffff;
+  border-radius: 0 0 20rpx 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  margin-top: -2rpx; 
+  box-sizing: border-box;
+}
+
+.image-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-author {
+  font-size: 22rpx;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5rpx;
+}

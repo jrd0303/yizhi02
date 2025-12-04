@@ -1,0 +1,52 @@
+<view class="flex-col page">
+  <view class="flex-col justify-start items-center image-wrapper">
+    <image
+      class="image"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/16.png?sign=b5a00845e455b67df6ababf6f6f754c3&t=1758031816"
+    />
+  </view>
+  <view class="flex-row justify-between group">
+    <text class="font text">最近识别</text>
+    <navigator url="/pages/recognition_record/recognition_record" hover-class="navigator-hover">
+      <text class="font text_2">查看全部>></text>
+    </navigator>
+  </view>
+  <view class="image-row">
+    <view class="image-container">
+      <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/zuihdwancan.jpg?sign=d7aa2c7fdc4374787bb9b715adb59776&t=1763471597" 
+        mode="widthFix"
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">最后的晚餐</text>
+        <text class="image-author">达·芬奇</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+
+    <view class="image-container">
+      <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/1652406111312728.png?sign=e714d71570721f3a8b9fa3b6561d4626&t=1763471649" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">夏洛特小姐</text>
+        <text class="image-author">约翰·威廉·沃特豪斯</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+  </view>
+</view>

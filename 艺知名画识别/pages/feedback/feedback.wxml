@@ -1,0 +1,29 @@
+<view class="flex-col page">
+  <text class="self-center font">意见反馈</text>
+  <view class="flex-col self-stretch section mt-37">
+    <view class="textarea-container">
+      <textarea class="self-start font_2 text feedback-input" placeholder="请填写您的意见和反馈" bindinput="onFeedbackInput" value="{{feedbackContent}}" maxlength="200" style="height: 377rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx"></textarea>
+      <text class="char-count">{{charCount}}/200</text>
+    </view>
+    <view class="flex-col self-stretch group mt-166">
+      <text class="self-start font_2 text_2 mb-10">上传图片</text>
+      <view class="flex-wrap flex-row image-list">
+        <!-- 图片列表 -->
+        <view wx:for="{{imageList}}" wx:key="index" class="image-item">
+          <image class="preview-image" src="{{item}}" mode="aspectFill"></image>
+          <view class="delete-icon" bindtap="deleteImage" data-index="{{index}}">×</view>
+        </view>
+        <!-- 上传按钮 -->
+        <view wx:if="{{imageList.length < 9}}" class="flex-col justify-start items-center relative section_2" bindtap="chooseImage">
+          <view class="upload-icon">
+            <view class="section_4"></view>
+            <view class="section_3 pos"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="flex-col justify-start items-center self-stretch text-wrapper mt-37" bindtap="submitFeedback">
+    <text class="font text_3">提交</text>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+<view class="flex-col page" style="width: 742rpx; display: flex; box-sizing: border-box">
+  <view class="flex-row items-center self-stretch image-wrapper">
+    <image
+      class="image"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/1.png?sign=f7be10b85bdedcd02bdab541463d3382&t=1758031743"
+    />
+    <input class="search-input" placeholder="请输入画作名称" placeholder-class="placeholder-style" bindinput="onSearchInput"/>
+  </view>
+  <view class="self-stretch section" style="height: 285rpx; display: block; box-sizing: border-box">
+  <swiper 
+    class="carousel-swiper" 
+    indicator-dots="{{true}}" 
+    autoplay="{{true}}" 
+    interval="5000" 
+    duration="500"
+    circular="{{true}}" style="height: 335rpx; display: block; box-sizing: border-box">
+    <swiper-item>
+      <navigator url="/pages/detail/detail" hover-class="navigator-hover" style="height: 339rpx; display: block; box-sizing: border-box">
+      <image style="width: 731rpx; display: inline-block; box-sizing: border-box; height: -84rpx; left: -27rpx; top: -67rpx; position: relative" 
+        class="carousel-img" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/guanggao1.png?sign=405e4a036817c30bcbbd28428aba24a4&t=1763471466" 
+        mode="widthFix"/>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+      <image style="width: 695rpx; height: 220rpx; display: inline-block; box-sizing: border-box" 
+        class="carousel-img" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/guanggao2.jpg?sign=bf8dcd3b787121a3a77e9f8842802e44&t=1763471498" 
+        mode="widthFix"/>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+      <image style="width: 1209rpx; height: 337rpx; display: inline-block; box-sizing: border-box; position: relative; left: -520rpx; top: 0rpx" 
+        class="carousel-img" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/guanggao3.jpg?sign=8b34ae56fa9ae198d952a7b3defb9547&t=1763471514" 
+        mode="widthFix"/>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+      <image style="width: 700rpx; height: 325rpx; display: inline-block; box-sizing: border-box" 
+        class="carousel-img" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/guanggao4.png?sign=d8f229870380164c084a2de1b0a3a8a0&t=1763471528" 
+        mode="widthFix"/>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+    <image style="position: relative; left: -4rpx; top: 28rpx"
+      class="self-center image_2"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/2.png?sign=aa46b13bf051f3f4b7c0bba7fb1a6fa0&t=1758031767"
+      bindtap="navigateToRecognition"/>
+    <view class="style-button" bindtap="navigateToRecognition" style="position: relative; left: 250rpx; top: 6rpx; height: 56rpx; display: flex; box-sizing: border-box">
+      <text class="style-button-text">换个风格</text>
+    </view>
+  <view class="flex-col self-stretch group" style="position: relative; left: 4rpx; top: 4rpx">
+    <view class="flex-row justify-between group_2">
+      <text class="self-center text">热门名画</text>
+      <navigator url="/pages/recommend/recommend" hover-class="navigator-hover">
+        <text class="self-start text_2">更多推荐>></text>
+      </navigator>
+    </view>
+<view class="mt-26 flex-row justify-center"> 
+  <view class="section_2">
+    <navigator url="/pages/detail/detail" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/xingkong.jpg?sign=4e624fc964618dd5f942a9ac779dea27&t=1763471558"/>
+    </navigator>
+    <view class="section_2-text">星月夜</view>
+  </view>
+  <view class="section_2 ml-25">
+    <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/1652406111312728.png?sign=7475ec9e47944d89144bcd990b3fb3e6&t=1763471570"/>
+      </navigator>
+    <view class="section_2-text">蒙娜丽莎</view>
+  </view>
+</view>
+<view class="mt-26 flex-row justify-center"> 
+  <view class="section_2">
+    <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/czyadang.jpg?sign=730cb6f2d020dad9bdacb9df7c68d99b&t=1763471584"/>
+    </navigator>
+    <view class="section_2-text">呐喊</view>
+  </view>
+  <view class="section_2 ml-25">
+    <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/zuihdwancan.jpg?sign=d7aa2c7fdc4374787bb9b715adb59776&t=1763471597"/>
+    </navigator>
+    <view class="section_2-text">最后的晚餐</view>
+  </view>
+</view>
+  </view>
+</view>

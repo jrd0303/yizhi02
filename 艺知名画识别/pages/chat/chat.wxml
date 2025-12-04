@@ -1,0 +1,61 @@
+<view class="flex-col page" style="height: 1291rpx; display: flex; box-sizing: border-box">
+  <view class="flex-row group">
+    <image
+      class="self-center image"
+      src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/7.png?sign=5a3163b16a833b2392ca7d27da71aa87&t=1758031846"
+    />
+    <view class="flex-col items-start self-start group_2 ml-5">
+      <text class="text">艺术助手</text>
+      <text class="font mt-21">随时为你解答艺术问题</text>
+    </view>
+  </view>
+  <view class="flex-col group_3" style="height: 756rpx; display: flex; box-sizing: border-box">
+    <view class="divider"></view>
+    <!-- <view class="flex-col justify-start items-center text-wrapper"> -->
+      <!-- <text class="font_2 text_2">
+        您好！我是您的艺术助手，可以为您解答名画相关的问题，识别画作，或者推荐艺术作品。
+      </text> -->
+    <!-- </view> -->
+    <!-- 消息列表 -->
+    <scroll-view id="chat-scroll" scroll-y="true" style="height: 966rpx; width: 100%; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+      <view wx:for="{{messages}}" wx:key="index" class="message-item" id="message-{{index}}">
+        <view wx:if="{{item.role === 'user'}}" class="user-message">
+          <view class="user-content">
+            <text>{{item.content}}</text>
+          </view>
+        </view>
+        <view wx:elif="{{item.role === 'assistant'}}" class="ai-message">
+          <view class="ai-content">
+            <text>{{item.content}}</text>
+          </view>
+        </view>
+      </view>
+      <!-- 加载中状态 -->
+      <view wx:if="{{loading}}" class="loading-container">
+        <view class="loading-spinner"></view>
+        <text class="loading-text">思考中...</text>
+      </view>
+    </scroll-view>
+    <view class="fixed-bottom-search" style="height: 1333rpx; display: block; box-sizing: border-box; left: 0rpx; top: 1100rpx">
+      <view class="flex-row items-center group_5" style="height: 75rpx; display: flex; box-sizing: border-box">
+        <view class="flex-col justify-start items-center text-wrapper_2" bindtap="handlePresetQuestion" data-question="你是谁" style="width: 166rpx; height: 56rpx; display: flex; box-sizing: border-box">
+          <text class="font text_4">你是谁</text>
+        </view>
+        <view class="flex-col justify-start items-center text-wrapper_2 ml-15" bindtap="handlePresetQuestion" data-question="艺术风格有哪些？" style="height: 55rpx; display: flex; box-sizing: border-box">
+          <text class="font text_5">艺术风格</text>
+        </view>
+        <view class="flex-col justify-start items-center text-wrapper_2 ml-15" bindtap="handlePresetQuestion" data-question="印象派是什么" style="width: 166rpx; height: 55rpx; display: flex; box-sizing: border-box">
+          <text class="font text_3">印象派</text>
+        </view>
+      </view>
+      <view class="flex-row justify-between items-center section">
+        <input class="font_2 text_6" placeholder="向AI助手提问..." value="{{inputValue}}" bindinput="onInput" placeholder-style="color:#999;"/>
+        <image
+          class="image_2"
+          src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/%E5%9B%BE%E6%A0%872/%E5%9B%BE%E6%A0%872/8.png?sign=6bc16183981dc7c5cb651d4712f28845&t=1758031862"
+          bindtap="sendMessage"
+        />
+      </view>
+    </view>
+  </view>
+</view>

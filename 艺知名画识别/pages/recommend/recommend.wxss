@@ -1,0 +1,137 @@
+/* 使用全局通用样式，保持页面底色不变 */
+.page {
+  padding: 24.42rpx 17.44rpx 111.63rpx 31.4rpx;
+}
+
+/* 使用全局字体样式 */
+.text {
+  color: var(--text-primary);
+  font-size: 41.86rpx;
+  font-family: SourceHanSansCN;
+  line-height: 38.72rpx;
+}
+
+
+
+.section {
+  background-color: var(--white);
+  border-radius: 34.88rpx;
+  height: 211.05rpx;
+  border-left: solid 1.74rpx var(--black);
+  border-right: solid 1.74rpx var(--black);
+  border-top: solid 1.74rpx var(--black);
+  border-bottom: solid 1.74rpx var(--black);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.view {
+  margin-top: 62.79rpx;
+}
+
+.group {
+  margin-top: 47.09rpx;
+}
+
+.section_2 {
+  flex: 1; /* 让两个图片容器平分父容器宽度 */
+  max-width: 317.51rpx; /* 限制最大宽度，避免过宽 */
+  margin: 0 12.5rpx;
+  position: relative; /* 为图片比例缩放提供定位基准 */
+  padding-top: 75%; /* 4:3 比例（高度=宽度*0.75），可根据需要调整 */
+}
+
+/* 修改图片样式，使其填充容器并保持比例 */
+.section_2_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持图片比例并裁剪多余部分 */
+  background-color: #ffffff;
+  border-radius: 37.76rpx;
+}
+
+/* 调整行容器样式，确保图片排列正确 */
+.flex-row.justify-center {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12.5rpx; /* 抵消图片容器的margin，避免溢出 */
+}
+/* 调整图片容器样式 - 去除底部margin减少上下空白 */
+.image-container {
+  width: 45%;
+  margin: 0 10rpx 10rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.art-image {
+  width: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #f5f5f5;
+  display: block;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.image-info {
+  height: 100rpx;
+  padding: 15rpx;
+  background-color: #ffffff;
+  border-radius: 0 0 20rpx 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  margin-top: -2rpx; 
+  box-sizing: border-box;
+}
+
+.image-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-author {
+  font-size: 22rpx;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5rpx;
+}
+
+
+
+
+/* 
+.image-container {
+  width: 45%; 
+  margin: 0 10rpx 20rpx; 
+  
+}
+
+.art-image {
+  width: 100%; 
+  border-radius: 20rpx;
+  background-color: #f5f5f5;
+}
+
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 0 10rpx;
+  margin-top: 50rpx;
+} */

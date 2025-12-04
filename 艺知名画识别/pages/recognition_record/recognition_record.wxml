@@ -1,0 +1,90 @@
+<view class="flex-col page">
+  <view class="flex-col" style="height: 86rpx; display: flex; box-sizing: border-box">
+    <view class="flex-row items-center group" style="position: relative; left: -18rpx; top: -46rpx; width: 744rpx; height: 142rpx; display: flex; box-sizing: border-box">
+      <view bindtap="navigateToCollection" class="flex-row items-center group nav-item">
+        <text class="font text" style="position: relative; left: 0rpx; top: -39rpx">我的收藏</text>
+      </view>
+      <view class="ml-50 flex-row items-center flex-1">
+        <view bindtap="navigateToCreate" class="nav-item">
+          <text class="font" style="position: relative; left: 0rpx; top: -25rpx">创作记录</text>
+        </view>
+        <view class="flex-col justify-start items-center flex-1 text-wrapper ml-15" style="position: relative; left: 0rpx; top: -25rpx">
+          <text class="font text_2">识别记录</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="image-row">
+    <view class="image-container">
+      <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/zuihdwancan.jpg?sign=f9ac341a2c864f10caa02849cffd189f&t=1763472004" 
+        mode="widthFix"
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">最后的晚餐</text>
+        <text class="image-author">达·芬奇</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+
+    <view class="image-container">
+      <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/1652406111312728.png?sign=7ca49b157c08375e5b81630ebbe78d6f&t=1763471986" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">夏洛特小姐</text>
+        <text class="image-author">约翰·威廉·沃特豪斯</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+    <view class="image-container">
+      <navigator url="/pages/detail/detail" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/xingkong.jpg?sign=cfb05ff320ffb42bd1a92b179b7d52f8&t=1763471975" 
+        mode="widthFix" 
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">星月夜</text>
+        <text class="image-author">文森特·梵高</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+    <view class="image-container">
+      <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/czyadang.jpg?sign=4e677c1a13504bfe6b1fc50db488af5a&t=1763471938" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+      <view style="display: flex;flex-direction: column;">
+        <text class="image-title">创作亚当</text>
+        <text class="image-author">米开朗基罗</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+  </view>
+</view>

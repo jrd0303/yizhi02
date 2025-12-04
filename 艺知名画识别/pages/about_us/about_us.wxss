@@ -1,0 +1,178 @@
+/* 整体容器 */
+.page {
+  padding: 38.37rpx 31.4rpx 943.6rpx 45.35rpx;
+  background-color: #fff1cc;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+}
+
+/* 返回按钮样式 */
+.back-button {
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.back-icon {
+  font-size: 40rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 标题样式 */
+.text {
+  color: #000000;
+  font-size: 41.86rpx;
+  font-family: SourceHanSansCN;
+  line-height: 38.6rpx;
+}
+
+/* 版本号容器 */
+.text-wrapper {
+  margin: 0 10.47rpx;
+  padding: 34.88rpx 0 24.42rpx;
+  background-color: #ffffff;
+  border-radius: 130.81rpx;
+}
+
+/* 版本号文本 */
+.text_2 {
+  margin-left: 45.35rpx;
+  color: #000000;
+  font-size: 31.4rpx;
+  font-family: SourceHanSansCN;
+  line-height: 38.37rpx;
+  width: 167.44rpx;
+}
+
+/* 内容区块 */
+.section {
+  padding: 45.35rpx 45.35rpx 30rpx;
+  background-color: #ffffff;
+  border-radius: 57.56rpx;
+}
+
+/* 字体基础样式 */
+.font {
+  font-size: 34.88rpx;
+  font-family: SourceHanSansCN;
+  line-height: 32.37rpx;
+}
+
+/* 主文本颜色 */
+.text_3 {
+  color: #000000;
+}
+
+/* 次要文本颜色 */
+.text_4 {
+  color: #a6a6a6;
+  line-height: 32.3rpx;
+}
+
+/* 间距样式 */
+.mt-21 {
+  margin-top: 36.63rpx;
+}
+
+.mt-29 {
+  margin-top: 50.58rpx;
+}
+
+.mt-174 {
+  margin-top: 303.49rpx;
+}
+
+.mb-15 {
+  margin-bottom: 26.51rpx;
+}
+
+.mt-30 {
+  margin-top: 52.91rpx;
+}
+
+/* 功能区块样式 */
+.feature-section {
+  margin-top: 20rpx;
+}
+
+.feature-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  font-family: SourceHanSansCN;
+  margin-bottom: 25rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.feature-item {
+  margin-bottom: 25rpx;
+  padding-left: 10rpx;
+}
+
+.feature-name {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #444;
+  font-family: SourceHanSansCN;
+  margin-bottom: 8rpx;
+  display: block;
+}
+
+.feature-desc {
+  font-size: 26rpx;
+  color: #666;
+  font-family: SourceHanSansCN;
+  line-height: 42rpx;
+  display: block;
+}
+
+/* 设计理念区块样式 */
+.concept-section {
+  padding-top: 15rpx;
+}
+
+.concept-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  font-family: SourceHanSansCN;
+  margin-bottom: 15rpx;
+}
+
+.concept-desc {
+  font-size: 26rpx;
+  color: #666;
+  font-family: SourceHanSansCN;
+  line-height: 42rpx;
+}
+
+/* 联系我们区块样式 */
+.contact-section {
+  padding-top: 15rpx;
+}
+
+.contact-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  font-family: SourceHanSansCN;
+  margin-bottom: 15rpx;
+}
+
+.contact-info {
+  font-size: 26rpx;
+  color: #666;
+  font-family: SourceHanSansCN;
+  line-height: 42rpx;
+}

@@ -1,0 +1,30 @@
+<view class="flex-col page">
+  <view class="flex-col group">
+    <text class="self-center text">星月夜</text>
+    <view class="self-stretch section mt-15"></view>
+  </view>
+  <view class="flex-col section_2">
+    <view class="flex-col justify-start items-start text-wrapper"><text class="font text_2">艺术家:</text>
+    <text class="text_7" style="position: relative; left: 119rpx; top: -32rpx">文森特·梵高</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_2 mt-11">
+      <text class="font text_3">创作时间:</text>
+      <text class="text_7" style="position: relative; left: 131rpx; top: -32rpx">1889 年 6 月</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_3 mt-11">
+      <text class="font text_4">艺术流派:</text>
+      <text class="text_7" style="position: relative; left: 135rpx; top: -32rpx">后印象派</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_2 mt-11">
+      <text class="font text_5">收藏地点:</text>
+      <text class="text_7" style="position: relative; left: 135rpx; top: -32rpx">纽约现代艺术博物馆</text>
+    </view>
+    <view class="flex-col justify-start items-start text-wrapper_4 mt-11">
+      <text class="font text_6">作品描述:</text>
+      <view class="description-container">
+        <text class="text_7">{{showFullDescription ? description : description.substring(0, 50) + '...'}}</text>
+        <text class="show-more" bindtap="toggleDescription">{{showFullDescription ? '收起' : '展开全文'}}</text>
+      </view>
+    </view>
+  </view>
+</view>

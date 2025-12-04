@@ -1,0 +1,139 @@
+<view class="flex-col page">
+  <text class="self-center text">热门推荐</text>
+
+  <view class="image-row">
+    <view class="image-container">
+      <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/zuihdwancan.jpg?sign=a8ff8f8c7cf30814dfd112be83caa2be&t=1763471720" 
+        mode="widthFix"
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">最后的晚餐</text>
+        <text class="image-author">达·芬奇</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+
+    <view class="image-container">
+      <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/1652406111312728.png?sign=e714d71570721f3a8b9fa3b6561d4626&t=1763471649" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">夏洛特小姐</text>
+        <text class="image-author">约翰·威廉·沃特豪斯</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+
+    <view class="image-container">
+      <navigator url="/pages/detail/detail" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/xingkong.jpg?sign=855ac119a9f95b6cc760996cfff621b9&t=1763471759" 
+        mode="widthFix" 
+        lazy-load="true" 
+      ></image>
+      </navigator>
+      <view class="image-info">
+        <view style="display: flex;flex-direction: column;">
+        <text class="image-title">星月夜</text>
+        <text class="image-author">文森特·梵高</text>
+        </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+    <view class="image-container">
+      <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+      <image 
+        class="art-image" 
+        src="https://636c-cloud1-6ge0q5ivfe7700f0-1323134461.tcb.qcloud.la/czyadang.jpg?sign=5a7ac6dfa3732ee99f1d254771e89ae0&t=1763471774" 
+        mode="widthFix" 
+        lazy-load="true"
+      ></image>
+      </navigator>
+      <view class="image-info">
+      <view style="display: flex;flex-direction: column;">
+        <text class="image-title">创作亚当</text>
+        <text class="image-author">米开朗基罗</text>
+      </view>
+        <icon class="like-icon" type="heart" size="20"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+  <!-- <view class="flex-col self-stretch group">
+    <view class="mt-26 flex-row justify-center"> 
+  <view class="section_2">
+    <navigator url="/pages/detail/detail" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="/images/xingkong.jpg"/>
+    </navigator>
+  </view>
+  <view class="section_2 ml-25">
+    <navigator url="/pages/detail2/detail2" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="/images/zuihdwancan.jpg"/>
+      </navigator>
+  </view>
+</view>
+<view class="mt-26 flex-row justify-center"> 
+  <view class="section_2">
+    <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="/images/czyadang.jpg"/>
+    </navigator>
+  </view>
+  <view class="section_2 ml-25">
+    <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src="/images/1652406111312728.png"/>
+    </navigator>
+  </view>
+</view>
+<view class="mt-26 flex-row justify-center"> 
+  <view class="section_2">
+    <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src=""/>
+    </navigator>
+  </view>
+  <view class="section_2 ml-25">
+    <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src=""/>
+    </navigator>
+  </view>
+</view>
+<view class="mt-26 flex-row justify-center"> 
+  <view class="section_2">
+    <navigator url="/pages/detail3/detail3" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src=""/>
+    </navigator>
+  </view>
+  <view class="section_2 ml-25">
+    <navigator url="/pages/detail4/detail4" hover-class="navigator-hover">
+    <image class="section_2_img"
+      src=""/>
+    </navigator>
+  </view>
+</view>
+  </view>
+</view> -->
